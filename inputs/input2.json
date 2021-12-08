@@ -1,0 +1,15 @@
+{
+	"nodes" : [
+		{"node_id" : 0, "start_round" : 0, "exit_round" : 12},
+		{"node_id" : 1, "start_round" : 0, "exit_round" : 12},
+		{"node_id" : 2, "start_round" : 0, "exit_round" : 12},
+		{"node_id" : 5, "start_round" : 0, "exit_round" : 12}
+	],
+	"byzantine_nodes" : [
+		{"node_id" : 2, "type" : 0}
+	],
+	"input_values" : [
+		{"round" : 3, "value" : 9, "node_id" : 2}
+	],
+	"consensus_id_json" : 3
+}

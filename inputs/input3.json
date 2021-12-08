@@ -1,0 +1,43 @@
+{
+	"nodes" : [
+		{"node_id" : 1, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 2, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 3, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 4, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 5, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 6, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 7, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 8, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 9, "start_round" : 0, "exit_round" : 18},
+		{"node_id" : 10, "start_round" : 0, "exit_round" : 18}
+	],
+	"byzantine_nodes" : [
+		{"node_id" : 3, "type" : 0},
+		{
+			"node_id" : 1,
+			"type" : 1,
+			"own_value" : 3,
+			"inits" : [
+				{"round" : 4, "receiver_ids" : [6, 7, 8, 9]}
+			],
+			"echoes" : [
+				{"round" : 5, "node_id" : 1, "receiver_ids" : [6]}
+			]
+		},
+		{
+			"node_id" : 2, 
+			"type" : 1,
+			"own_value" : 3,
+			"inits" : [
+				{"round" : 4, "receiver_ids" : [6, 7, 8, 9]}
+			],
+			"echoes" : [
+				{"round" : 5, "node_id" : 1, "receiver_ids" : [6]}
+			]
+		}
+	], 
+	"input_values" : [
+		{"round" : 3, "value" : 1, "node_id" : 3}
+	],
+	"consensus_id_json" : 4
+}

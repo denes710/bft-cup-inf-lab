@@ -1,0 +1,20 @@
+{
+	"nodes" : [
+		{"node_id" : 0, "start_round" : 0, "exit_round" : 12},
+		{"node_id" : 1, "start_round" : 0, "exit_round" : 12},
+		{"node_id" : 2, "start_round" : 0, "exit_round" : 12},
+		{"node_id" : 5, "start_round" : 0, "exit_round" : 12}
+	],
+	"input_values" : [
+		{"round" : 3, "value" : 9, "node_id" : 1},
+		{"round" : 5, "value" : 15, "node_id" : 1},
+		{"round" : 7, "value" : 21, "node_id" : 1}
+	],
+	"output_chains" : [
+		{"node_id" : 0, "chain" : [{"consensus_id" : 4, "value" : 9}, {"consensus_id" : 6, "value" : 15}, {"consensus_id" : 8, "value" : 21}]},
+		{"node_id" : 1, "chain" : [{"consensus_id" : 4, "value" : 9}, {"consensus_id" : 6, "value" : 15}, {"consensus_id" : 8, "value" : 21}]},
+		{"node_id" : 2, "chain" : [{"consensus_id" : 4, "value" : 9}, {"consensus_id" : 6, "value" : 15}, {"consensus_id" : 8, "value" : 21}]},
+		{"node_id" : 5, "chain" : [{"consensus_id" : 4, "value" : 9}, {"consensus_id" : 6, "value" : 15}, {"consensus_id" : 8, "value" : 21}]}
+	],
+	"consensus_id_json" : 4 
+}
