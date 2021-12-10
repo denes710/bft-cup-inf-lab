@@ -6,7 +6,7 @@ from network import Network
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Program args")
-    parser.add_argument("--input-file", dest="input_filename", type=str, help="Json input file")
+    parser.add_argument("--input-file", dest="input_filename", type=str, help="Json input file", required=True)
     parser.add_argument("--no-logging", dest="no_logging", action="store_true", help="Turn off loggin")
     args = parser.parse_args()
     if not args.no_logging:
